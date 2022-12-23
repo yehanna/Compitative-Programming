@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang= "en"dir = "ltr">
+    <head>
+        <meta charaset = "UTF-8">
+        <title>Login and register form in html and css</title>
+        <link rel ="stylesheet" href = "istyle.css">
+        <link rel = "stylesheet"href ="">
+        <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+        
+    </head>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap');
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Roboto Slab', serif";
+}
+body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background: #ffb6c1 ;
+    padding:30px;
+}
+
+.container1{
+    max-width: 1500px;
+    max-height: 900px;
+    width:100%;
+    background: #C1ADAE;
+    padding:80px 0px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+
+}
+.container2{
+    max-width: 1500px;
+    max-height: 900px;
+    width:100%;
+    background: #C1ADAE;
+    padding:80px 0px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+
+}
+
+
+.container .form{
+    height:100%;
+    width:100%;
+    background:#C1ADAE;
+
+}
+.container .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login-form,.signup-form{
+width:calc(100% /2 -25px);
+    background: #E30B5C;
+}
+.title{
+    font-style:initial;
+    font-weight: 100%;
+    font-size:x-large;
+    font-display:inherit;
+    font-variant-caps: all-petite-caps;
+    font-optical-sizing:inherit;
+    content: "";
+
+    
+
+
+}
+.input-boxes{
+    display: flex;
+    align-items: center;
+    height:30px;
+    width:100%;
+    margin: 0 10px;
+}
+
+.input-boxes input{
+    height: 100%;
+    width:100%;
+    outline:none;
+    border:none;
+    padding: 0 30px;
+    font-size:16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+
+
+}
+.input-box em{
+    position:absolute;
+    color:aquamarine;
+}
+.form-content.button input-boxes input{
+    color:#E30B5C;
+    background: #ffb6c1;
+    border-radius: 6px;
+    padding:0;
+    cursor:pointer;
+    transition: all 0.4;
+}
+.text{
+    font-size:14px;
+    color:aquamarine;
+    
+
+}
+
+
+
+ .form-content .title{
+    font-size: 24px;
+    font-weight: 500;
+    color:red;
+}
+.button input:hover{
+    background:#E30B5C;
+   
+}
+.button{
+    color:#E30B5C;
+
+}
+.submit{
+    color:rgb(38, 248, 248);
+    tab-size: 30px;
+}
+    </style>
+    
+
+
+    <body>
+        <div class="container1">
+            
+                <div class="form-content"></div>
+                <div class="login-form">
+                    <div class = "title">Login</div>
+                     <div class = "input-boxes">
+                        <em class ="fas fa-envelope"></em>
+                        <input type=" text" placeholder="enter your email"required> 
+                     </div>
+                     <div class = "input-boxes">
+                        <em class ="fas fa-envelope"></em>
+                        
+                        <input type=" password" placeholder="enter your password"required> 
+                     </div>
+                     <br>
+                     <div class = "text"><a href = "#">Forgot password?</a></div>
+                     <div class = " button ">
+                        <em class ="fas fa-envelope"></em>
+                        <div class ="submit">
+                        <input type="submit" value="submit"></div>
+                        <div class = "text">
+                        <div class = "text">Don't have an account? <lable for ="">Signup</lable></div>
+                        </div>  
+                     </div>
+                    </div>
+                </div>
+            </div>
+        <div class = "container2">
+            <div class ="form-content"></div>
+                <div class ="signup-form">
+                    <div class = "title">Signup</div>
+                     <div class = "input-boxes">
+                        <em class ="fas fa-envelope"></em>
+                        <input type=" text" placeholder="enter your name"required> 
+                     </div>
+                     <div class = "input-boxes">
+                        <em class ="fas fa-envelope"></em>
+                        <input type=" text" placeholder="enter your email"required> 
+                     </div>
+                     <div class = "input-boxes">
+                        <em class ="fas fa-envelope"></em>
+                        <input type=" password" placeholder="enter your password"required> 
+                     </div>
+                     
+                     <div class = " button">
+                        <em class ="fas fa-envelope"></em>
+                        <div class ="submit"></div>
+                        <input type="submit" value="submit">
+                        <div class="text">
+                        <div class = "text">Aleardy have an account? <lable for ="">Login now</lable></div> 
+                        </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
